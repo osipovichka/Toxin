@@ -5,22 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Toxin</title>
 </head>
 
 <body>
     <header>
-        <div class="main-menu">
-            <div class="menu flex-vertical-center">
-                <div class="logo flex-vertical-center">
-                    <img src="./img/logo.svg" alt="">
+        <div class="container">
+            <div class="logo-menu flex-vertical-center">
+                <div class="logo">
+                    <a href=""><img src="./img/logo.svg" alt=""></a>
                 </div>
-                <div class="left-container font-montserrat flex-vertical-center">
-                    <ul class="left-menu">
-                        <li><a href="#" class="home">Home</a></li>
-                        <li><a href="#">About US</a></li>
-                        <li><a href="#">Services
+                <div class="left-container flex-vertical-center">
+                    <ul class="menu">
+                        <li><a href="#" class="home">О нас</a></li>
+                        <li><a href="#">Услуги
                                 <img src="./img/keyboard_arrow_down-24px.svg" alt="">
                             </a>
                             <ul class="submenu">
@@ -30,21 +29,103 @@
                                 <li><a href="#">Item 4</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Соглашения
+                                <img src="./img/keyboard_arrow_down-24px.svg" alt="">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">Item 1</a></li>
+                                <li><a href="#">Item 2</a></li>
+                                <li><a href="#">Item 3</a></li>
+                                <li><a href="#">Item 4</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <input type="button" class="login" value="LOGIN">
-                    <input type="button" class="register" value="REGISTER">
+                    <a href="">
+                        <div class="login">ВОЙТИ</div>
+                    </a>
+                    <a href="">
+                        <div class="register">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="r">
-        <img src="./img/image3.svg" alt="" class="t">
+    <div class="search-form container">
+        <img src="./img/image3.svg" alt="">
+        <div class="form">
+            <h1>Найдем номера под ваши пожелания</h1>
+            <div class="flex">
+                <div>
+                    <span class="field-label">прибытие</span>
+                    <input type="date" name="" id="" class="date">
+                </div>
+                <div>
+                    <span class="field-label">выезд</span>
+                    <input type="date" name="" id="" class="date">
+                </div>
+            </div>
+            <div>
+                <span class="field-label font-montserrat">гости</span>
+                <select name="" id="">
+                    <option disabled selected>Сколько гостей</option>
+                    <option value="">Взрослые</option>
+                    <option value="">Дети</option>
+                    <option value="">Младенцы</option>
+                </select>
+            </div>
+            <input type="button" class="button submit" value="Подобрать номер">
+        </div>
+        <div class="text">
+            <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+        </div>
     </div>
 
+    <footer class="footer container flex">
+        <div class="logo-footer flex-column">
+            <div><img src="./img/logo.svg" alt=""></div>
+            <span>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</span>
+        </div>
+        <div class="navigation flex-column">
+            <span>Навигация</span>
+            <a href="">О нас</a>
+            <a href="">Новости</a>
+            <a href="">Служба поддержки</a>
+            <a href="">Услуги</a>
+        </div>
+        <div class="navigation flex-column">
+            <span>О нас</span>
+            <a href="">О сервисе</a>
+            <a href="">Наша команда</a>
+            <a href="">Вакансии</a>
+            <a href="">Инвесторы</a>
+        </div>
+        <div class="navigation flex-column">
+            <span>Служба поддержки</span>
+            <a href="">Соглашения</a>
+            <a href="">Сообщества</a>
+            <a href="">Связь с нами</a>
+        </div>
+        <div class="navigation subs flex-column">
+            <span>Подписка</span>
+            <p>Получайте специальные предложения и новости сервиса</p>
+            <div class="email">
+                <input type="text" placeholder="Email">
+                <button type="submit"><img src="./img/arrow_forward.svg" alt=""></button>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-bottom container flex">
+        <div class="ecommerce">Copyright © 2018 Toxin отель. Все права зачищены.</div>
+        <div class="social-net">
+            <a href=""><img src="./img/tw.svg" alt=""></a>
+            <a href=""><img src="./img/f.svg" alt=""></a>
+            <a href=""><img src="./img/inst.svg" alt=""></a>
+        </div>
+    </footer>
 </body>
 
 </html>
