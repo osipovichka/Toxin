@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.font-montserrat, .menu, .search-form, .footer, .footer-bottom {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-quicksand, .search-form .form h1 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-menu {
+  height: 40px;
+  margin: 15px 140px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+}
+
+.menu a .home {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  padding: 0;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: white;
+}
+
+.submenu li {
+  margin: 0;
+  width: 100%;
+  height: 30px;
+}
+
+.submenu li a {
+  padding: 5px;
+}
+
+.submenu > li:not(:last-child) {
+  border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+li:hover .submenu {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+a .login {
+  padding: 9px 20px 10px 20px;
+  border: 2px solid #BC9CFF;
+  border-radius: 22px;
+  height: 35px;
+  color: #BC9CFF;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+a .register {
+  padding: 10px 20px 10px 20px;
+  height: 34px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 22px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+a:last-child {
+  margin-right: 0;
+}
+
+.search-form {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-form .form {
+  width: 380px;
+  height: 380px;
+  padding: 40px 30px;
+  position: absolute;
+  top: 70px;
+  left: 140px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: white;
+}
+
+.search-form .form h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 0;
+}
+
+.search-form .form .field-label {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.search-form .form .date {
+  width: 150px;
+  height: 44px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.75);
+  outline: none;
+}
+
+.search-form select {
+  width: 320px;
+  height: 44px;
+  margin-top: 5px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-form .submit {
+  margin-top: 30px;
+}
+
+.search-form .text {
+  position: absolute;
+  right: 140px;
+  bottom: 30px;
+  width: 260px;
+  height: 48px;
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+}
+
+.footer {
+  height: 372px;
+  padding: 100px 140px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .logo-footer,
+.footer .subs {
+  width: 260px;
+}
+
+.navigation span {
+  font-weight: bold;
+  color: #1F2041;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+  margin-top: 20px;
+}
+
+.navigation .email {
+  position: relative;
+}
+
+.navigation .email input {
+  height: 44px;
+  width: 260px;
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  outline: none;
+}
+
+.navigation .email button {
+  position: absolute;
+  left: 216px;
+  top: 1px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  height: 70px;
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  padding: 26px 140px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-bottom a {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
